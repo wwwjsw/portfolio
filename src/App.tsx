@@ -1,11 +1,22 @@
-function App() {
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./index.css";
 
+function App() {
   return (
-    <div className="main">
-      <h1 className="text-title">Portfolio!</h1>
-      <p className="mt-2">&gt;Feito com Tailwind e com Vite.js.</p>
-    </div>
-  )
+    <>
+      <Header />
+      <Hero />
+      <Services />
+      <About />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
